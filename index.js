@@ -57,7 +57,7 @@ function executeCode() {
         workerIsRunning = false;
         worker = null;
         executeCode();
-    }, 5000);
+    }, 60000);
 }
 
 function shareCode() {

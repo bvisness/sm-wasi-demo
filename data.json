@@ -22,5 +22,11 @@
   "url": "https://firefoxci.taskcluster-artifacts.net/KVao_QqSTX6jZpdUNwIHPg/0/public/build/js.wasm",
   "buildid": "20230731151324",
   "rev": "9b8fe2d20be295e7d84facd336a12799ff592e18"
+ },
+ {
+  "branch": "local",
+  "url": "js.wasm",
+  "buildid": "???",
+  "rev": "???"
  }
 ]

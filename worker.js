@@ -32,7 +32,12 @@ async function run(source, wasm_url) {
 
     postMessage({status: "Running..."});
 
-    let instance = await WebAssembly.instantiate(wasmModule, wasi.getImports(wasmModule));
+    let instance = await WebAssembly.instantiate(wasmModule, {
+        ...wasi.getImports(wasmModule),
+        "env": {
+            "MemoryDiscard": console.log,
+        },
+    });
 
     wasmFs.fs.writeFileSync('/input.js', source);
 
